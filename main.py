@@ -9,4 +9,4 @@ async def on_ready():
   print('Bot Online')
 
 
-client.run(os.getenv('token'))
+client.run(token)
