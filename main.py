@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-
+import os
 client = commands.Bot(command_prefix = '//')
 
 #Once bot online print in terminal
@@ -9,4 +9,4 @@ async def on_ready():
   print('Bot Online')
 
 
-client.run('NzIwNzExMzAyMDE1ODc3MTUx.XuJ9ow.t3PMpCSBpazWNFbvJ9FVPc89qdo')
+client.run(os.getenv('token'))
